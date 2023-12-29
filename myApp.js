@@ -39,4 +39,8 @@ app.get(
   }
 );
 
+app.get("/:word/echo", (req, res, next) => {
+  res.json({ echo: req.params.word });
+});
+
 module.exports = app;
