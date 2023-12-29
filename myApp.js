@@ -20,7 +20,6 @@ app.get("/json", (req, res) => {
       ? "Hello json".toUpperCase()
       : "Hello json";
   const messageObj = { message: str };
-  console.log(messageObj, process.env.MESSAGE_STYLE);
   res.json(messageObj);
 });
 
